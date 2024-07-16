@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/eddydecena/vega-core-example/compare/v0.1.0...v0.1.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* hello data ([602b547](https://github.com/eddydecena/vega-core-example/commit/602b54725c21fa456c118158439c30afcfdb16d1))
+* some ref ([b3d649a](https://github.com/eddydecena/vega-core-example/commit/b3d649adf1bc2a95c8df5e8988adea6317ccddb1))
+
 ## [0.2.13](https://github.com/poligonoio/vega-core/compare/v0.2.12...v0.2.13) (2024-07-11)
 
 
