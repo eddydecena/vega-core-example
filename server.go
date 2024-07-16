@@ -26,9 +26,10 @@ import (
 )
 
 var server *http.Server
+var version string
 
 func init() {
-	version := "0.1.0"
+	// version := os.Getenv("POLIGONO_VERSION")
 	basePathStr := "/v1alpha1"
 
 	port := os.Getenv("PORT")

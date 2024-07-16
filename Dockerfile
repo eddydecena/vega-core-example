@@ -1,5 +1,7 @@
 FROM golang:1.21 AS build
 
+ARG POLIGONO_VERSION=main
+
 WORKDIR /tmp/vega-core
 
 COPY go.mod .
@@ -9,7 +11,7 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o ./bin/vega-core ./server.go
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags "-X main.version=${POLIGONO_VERSION}" -o ./bin/vega-core ./server.go
 
 FROM busybox:1.35.0-uclibc as busybox
 
